@@ -1,7 +1,8 @@
 let fs = require('fs');
-let calculateAlarm = require('./calculateAlarm');
+// let calculateAlarm = require('./calculateAlarm');
+let ovenTimer = require('./ovenTimer');
 let input = fs.readFileSync('input.txt').toString().split('\n');
 
-const result = calculateAlarm(input);
+const result = ovenTimer(input);
 
-console.log(result.hour, result.minute);
+console.log(result);
