@@ -6,9 +6,10 @@ let fs = require('fs');
 // let multi = require('./multi');
 // let startOne = require('./star_1');
 // let maxAndMin = require('./maxAndMin');
-let maxLength = require('./maxLength');
+// let maxLength = require('./maxLength');
+let remainder = require('./remainder');
 let input = fs.readFileSync('input.txt').toString().split('\n');
 
-const result = maxLength(input);
+const result = remainder(input);
 
 console.log(result);
