@@ -8,9 +8,10 @@ let fs = require('fs');
 // let maxAndMin = require('./maxAndMin');
 // let maxLength = require('./maxLength');
 // let remainder = require('./remainder');
-let average = require('./average');
+// let average = require('./average');
+let averageOne = require('./average_1');
 let input = fs.readFileSync('input.txt').toString().split('\n');
 
-const result = average(input);
+const result = averageOne(input);
 
 console.log(result);
