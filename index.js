@@ -11,9 +11,10 @@ let fs = require('fs');
 // let average = require('./average');
 // let averageOne = require('./average_1');
 // let stringAdd = require('./stringAdd');
-let stringRepit = require('./stringRepit');
+// let stringRepit = require('./stringRepit');
+let solution = require('./2908');
 let input = fs.readFileSync('input.txt').toString().split('\n');
 
-const result = stringRepit(input);
+const result = solution(input);
 
 // console.log(result);
