@@ -10,9 +10,10 @@ let fs = require('fs');
 // let remainder = require('./remainder');
 // let average = require('./average');
 // let averageOne = require('./average_1');
-let stringAdd = require('./stringAdd');
+// let stringAdd = require('./stringAdd');
+let stringRepit = require('./stringRepit');
 let input = fs.readFileSync('input.txt').toString().split('\n');
 
-const result = stringAdd(input);
+const result = stringRepit(input);
 
-console.log(result);
+// console.log(result);
