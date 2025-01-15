@@ -39,11 +39,9 @@ function solution(input) {
     return rightIndex - leftIndex;
   }
 
-  let answer = "";
-  targets.forEach((v) => {
-    let result = countByRange(array, v, v);
-    answer += result + " ";
-  });
+  const answer = targets
+    .map((target) => countByRange(array, target, target))
+    .join(" ");
   console.log(answer);
 }
 
