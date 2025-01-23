@@ -11,7 +11,7 @@ function solution(input) {
       graph[i].push(line[j]);
     }
   }
-  let visited = new Array(11).fill(false);
+  let visited = new Array(n + 1).fill(false);
   let result = [];
   let minValue = 1e9;
   function dfs(depth) {
