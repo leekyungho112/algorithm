@@ -1,4 +1,4 @@
-let n = 8;
+let n = 5;
 let queens = [];
 
 function possible(x, y) {
