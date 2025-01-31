@@ -10,21 +10,20 @@ function solution(input) {
     let [a, b] = input[i].split(" ").map(Number);
     graph[a].push(b);
     graph[b].push(a);
-    console.log(graph);
   }
 
   function dfs(graph, v, visited) {
     visited[v] = true;
 
+    count++;
     for (let i of graph[v]) {
       if (!visited[i]) {
-        count++;
         dfs(graph, i, visited);
       }
     }
   }
   dfs(graph, 1, visited);
-  console.log(count);
+  console.log(count - 1);
 }
 
 module.exports = solution;
