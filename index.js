@@ -12,7 +12,7 @@ let fs = require("fs");
 // let averageOne = require('./average_1');
 // let stringAdd = require('./stringAdd');
 // let stringRepit = require('./stringRepit');
-let solution = require("./section1/1_8");
+let solution = require("./section1/1_9");
 let input = fs.readFileSync("input.txt").toString().split("\n");
 
 const result = solution(input);
