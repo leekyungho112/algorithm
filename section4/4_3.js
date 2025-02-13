@@ -2,13 +2,10 @@ function solution(input) {
   const [n, m] = input[0].split(" ").map(Number);
   let test = [];
   let answer = 0;
-  let rank = Array.from({ length: m }, () => Array(n + 1).fill(0));
+
   for (let i = 1; i <= m; i++) {
     let line = input[i].split(" ").map(Number);
     test.push(line);
-    for (let s = 0; s < n; s++) {
-      rank[i - 1][line[s]] = s;
-    }
   }
 
   for (let i = 1; i <= n; i++) {
@@ -34,7 +31,7 @@ function solution(input) {
       }
     }
   }
-  console.log(rank);
+
   console.log(answer);
 }
 
