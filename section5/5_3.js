@@ -14,11 +14,10 @@ function solution(input) {
     }
     if (sum === m) {
       answer++;
-      console.log(start, end);
     }
   }
 
-  //   console.log(answer);
+  console.log(answer);
 }
 
 module.exports = solution;
