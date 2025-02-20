@@ -9,7 +9,7 @@ function solution(input) {
     for (let i = 0; i < n; i++) {
       if (x === answer[i]) pos = i;
     }
-    console.log("pos:", pos, "x:", x);
+
     if (pos === -1) {
       for (let i = s - 1; i > 0; i--) {
         answer[i] = answer[i - 1];
@@ -21,7 +21,7 @@ function solution(input) {
     }
     answer[0] = x;
   }
-  //   console.log(answer);
+  console.log(answer);
 }
 
 module.exports = solution;
