@@ -1,5 +1,5 @@
 let fs = require("fs");
-let solution = require("./section8/8_2");
+let solution = require("./section8/8_3");
 let input = fs.readFileSync("input.txt").toString().split("\n");
 
 const result = solution(input);
